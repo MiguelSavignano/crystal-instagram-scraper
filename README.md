@@ -12,7 +12,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   crystal_instagram_scraper:
-    github: [MiguelSavignano]/crystal-instagram-scraper
+    github: MiguelSavignano/crystal-instagram-scraper
 ```
 
 ## Usage
