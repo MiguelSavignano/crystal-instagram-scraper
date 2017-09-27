@@ -12,7 +12,6 @@ describe CrystalInstagramScraper do
     .should be_a(JSON::Any)
   end
 
-
   it ".get_user" do
     CrystalInstagramScraper.get_user("the.cocktail")
     .should be_a(JSON::Any)

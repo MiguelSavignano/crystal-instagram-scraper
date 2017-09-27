@@ -1,6 +1,9 @@
-# crystal_instagram_scraper
+# Crystal instagram scraper
 
-TODO: Write a description here
+А simple module for requests to Instagram without an API key.
+
+Note: this lib it's inspired in a ruby gem
+[ruby-instagram-scraper](https://rubygems.org/gems/ruby-instagram-scraper)
 
 ## Installation
 
@@ -9,7 +12,7 @@ Add this to your application's `shard.yml`:
 ```yaml
 dependencies:
   crystal_instagram_scraper:
-    github: [your-github-name]/crystal_instagram_scraper
+    github: [MiguelSavignano]/crystal-instagram-scraper
 ```
 
 ## Usage
@@ -18,15 +21,21 @@ dependencies:
 require "crystal_instagram_scraper"
 ```
 
-TODO: Write usage instructions here
+## Methods
 
-## Development
+```crystal
+# Get user media nodes:
+CrystalInstagramScraper.get_user_media_nodes("gopro")
 
-TODO: Write development instructions here
+# Pass an "id" of node to offset:
+CrystalInstagramScraper.get_user_media_nodes("gopro", "1259825963188747360" )
 
+# Get user info
+CrystalInstagramScraper.get_user("gopro")
+```
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/crystal_instagram_scraper/fork )
+1. Fork it ( https://github.com/MiguelSavignano/crystal-instagram-scraper/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -34,4 +43,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Miguel Savignano - creator, maintainer
+- [[MiguelSavignano]](https://github.com/MiguelSavignano) Miguel Savignano - creator, maintainer
