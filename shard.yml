@@ -1,0 +1,9 @@
+name: crystal_instagram_scraper
+version: 0.1.0
+
+authors:
+  - Miguel Savignano <migue.masx@gmail.com>
+
+crystal: 0.23.1
+
+license: MIT
